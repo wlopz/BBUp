@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bun Bun Up</string>
+    <string name="action_settings">Buscar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Se abrio el menu lateral</string>
+    <string name="drawer_close">Se cerro el menu lateral</string>
+    <string name="btnText">Ver Catalogo</string>
+    <string name="app_name_2">Jeans</string>
+    <string name="make_call">Llamar</string>
+
+    <!-- Nombres de los items -->
+    <string-array name="nav_drawer_items">
+        <item >Menu</item>
+        <item >Contacto</item>
+    </string-array>
+
+    <!-- Iconos de los items -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_people</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

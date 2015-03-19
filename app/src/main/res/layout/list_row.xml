@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/titulo"
+        android:layout_alignEnd="@+id/titulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
+
+    <!-- Thumbnail Image 2 -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail2"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <!-- Thumbnail Image 3 -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="200dp" />
+
+    <!-- Titulo -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/titulo"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/marca"
+        android:layout_alignEnd="@+id/marca"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff" />
+
+    <!-- Marca -->
+    <TextView
+        android:id="@+id/marca"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/marca"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/color"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Color -->
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/color"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/titulo"
+        android:layout_alignRight="@+id/ref"
+        android:layout_alignEnd="@+id/ref" />
+
+    <!-- Tipo -->
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tipo"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp" />
+
+    <!-- Referencia del Jean -->
+    <TextView
+        android:id="@+id/ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/ref"
+        android:textSize="@dimen/ref" />
+
+</RelativeLayout>
+
+    <!--Verox ListView-->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contacto"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asunto"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView1" />
+
+            <EditText
+                android:id="@+id/et_EmailAsunto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Asunto" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensaje"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView10" />
+
+            <EditText
+                android:id="@+id/et_EmailMensaje"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Mensaje"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:id="@+id/btnEnviarMail" />
+
+            <Button android:id="@+id/makeCall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/make_call"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Verox listview-->
+    <dimen name="titulo">0dp</dimen>
+    <dimen name="marca">0dip</dimen>
+    <dimen name="color">0dip</dimen>
+    <dimen name="tipo">0dip</dimen>
+    <dimen name="ref">0dip</dimen>
+</resources>
