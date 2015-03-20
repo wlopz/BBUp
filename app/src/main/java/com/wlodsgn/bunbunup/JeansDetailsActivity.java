@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import com.wlodsgn.bunbunup.model.Jeans;
 /**
  * Created by WiLo on 3/4/2015.
  */
-public class JeansDetailsActivity extends ActionBarActivity {
+public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener{
     private static String Titulo="titulo";
     private static String Marca="marca";
     private static String Colour="color";
@@ -97,18 +98,22 @@ public class JeansDetailsActivity extends ActionBarActivity {
 
     }
 
-
-
-    public void onClickHandler(View v){
+    public void onClick(View v){
         switch(v.getId()){
             case R.id.thumbnail:
                 startActivity(new Intent(this,JeansActivity.class));
+                Log.d("JeansDetailsActivity", "Thumbnail statement");
+                break;
 
             case R.id.thumbnail2:
                 startActivity(new Intent(this,JeansActivity.class));
+                Log.d("JeansDetailsActivity", "Thumbnail2 statement");
+                break;
 
             case R.id.thumbnail3:
                 startActivity(new Intent(this,JeansActivity.class));
+                Log.d("JeansDetailsActivity", "Thumbnail3 statement");
+                break;
 
             /**case R.id.thumbnailFS:
                 startActivity(new Intent(this,JeansActivity.class));**/
