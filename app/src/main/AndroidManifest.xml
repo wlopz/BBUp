@@ -51,6 +51,11 @@
                 android:value=".JeansActivity" />
         </activity>
 
+        <activity android:name=".FullScreenActivity"
+            android:label="Full screen"
+            android:parentActivityName=".JeansDetailsActivity"
+            android:theme="@style/Fullscreen"></activity>
+
     </application>
 
 </manifest>

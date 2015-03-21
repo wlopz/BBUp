@@ -5,20 +5,16 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.ImageLoader;
-import com.wlodsgn.bunbunup.adapter.CustomListAdapter;
-import com.wlodsgn.bunbunup.adapter.FlickrAdapter;
 import com.wlodsgn.bunbunup.app.AppController;
-import com.wlodsgn.bunbunup.model.Jeans;
 
 /**
  * Created by WiLo on 3/4/2015.
  */
-public class JeansDetailsActivity extends ActionBarActivity {
+public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener{
     private static String Titulo="titulo";
     private static String Marca="marca";
     private static String Colour="color";
@@ -32,8 +28,6 @@ public class JeansDetailsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jeansdetails);
         /**getSupportActionBar().hide();**/
-
-        ListOrGridItemClickListener listener = new ListOrGridItemClickListener();
 
         //Back button
         ActionBar actionBar = getSupportActionBar();
@@ -60,55 +54,58 @@ public class JeansDetailsActivity extends ActionBarActivity {
         TextView refName = (TextView) findViewById(R.id.ref);
         refName.setText(ref);
 
-        ImageLoader imageLoader = AppController.getInstance().getImageLoader();
-        String bitmap = i.getStringExtra("image");
-        NetworkImageView thumbNail = (NetworkImageView) findViewById(R.id.thumbnail);
-        thumbNail.setImageUrl(bitmap, imageLoader);
+        for (int num = 1; num <= 3; num++) {
+            String pos;
+            if (num == 1) {
+                pos = "";
+            } else {
+                pos = String.valueOf(num);
+            }
 
-        /**ImageLoader imageLoaderFS = AppController.getInstance().getImageLoader();
-        String bitmapfull = i.getStringExtra("imagefs");
-        NetworkImageView thumbNailFS = (NetworkImageView) findViewById(R.id.thumbnailFS);
-        thumbNailFS.setImageUrl(bitmapfull, imageLoaderFS);**/
+            ImageLoader imageLoader = AppController.getInstance().getImageLoader();
+            String bitmap = i.getStringExtra(new String("image" + pos));
 
-        ImageLoader imageLoader2 = AppController.getInstance().getImageLoader();
-        String bitmap2 = i.getStringExtra("image2");
-        NetworkImageView thumbNail2 = (NetworkImageView) findViewById(R.id.thumbnail2);
-        thumbNail2.setImageUrl(bitmap2, imageLoader2);
+            NetworkImageView thumbNail;
 
-        ImageLoader imageLoader3 = AppController.getInstance().getImageLoader();
-        String bitmap3 = i.getStringExtra("image3");
-        NetworkImageView thumbNail3 = (NetworkImageView) findViewById(R.id.thumbnail3);
-        thumbNail3.setImageUrl(bitmap3, imageLoader3);
-
-    }
-
-    private class ListOrGridItemClickListener implements AdapterView.OnItemClickListener {
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Intent intent = new Intent(JeansDetailsActivity.this, JnsDetailFSViewActivity.class);
-            /**NetworkImageView photo = FlickrAdapter.getItem(position);**/
-            /**bitmapfull = ((String) FlickrAdapter.getItem(position)).getThumbnailUrlFS();**/
-            intent.putExtra(JnsDetailFSViewActivity.EXTRA_IMAGE_URL, bitmapfull);
-
-
-            startActivity(intent);
+            switch(num) {
+                case 1:
+                    thumbNail = (NetworkImageView) findViewById(R.id.thumbnail);
+                    thumbNail.setImageUrl(bitmap, imageLoader);
+                    break;
+                case 2:
+                    thumbNail = (NetworkImageView) findViewById(R.id.thumbnail2);
+                    thumbNail.setImageUrl(bitmap, imageLoader);
+                    break;
+                case 3:
+                    thumbNail = (NetworkImageView) findViewById(R.id.thumbnail3);
+                    thumbNail.setImageUrl(bitmap, imageLoader);
+                    break;
+            }
         }
 
     }
 
-
-
-    public void onClickHandler(View v){
+    public void onClick(View v){
+        Intent i = getIntent();
+        Intent intent;
         switch(v.getId()){
             case R.id.thumbnail:
-                startActivity(new Intent(this,JeansActivity.class));
+                intent = new Intent(this, FullScreenActivity.class);
+                intent.putExtra("EXTRA_IMAGE_URL", i.getStringExtra("image"));
+                startActivity(intent);
+                break;
 
             case R.id.thumbnail2:
-                startActivity(new Intent(this,JeansActivity.class));
+                intent = new Intent(this, FullScreenActivity.class);
+                intent.putExtra("EXTRA_IMAGE_URL", i.getStringExtra("image2"));
+                startActivity(intent);
+                break;
 
             case R.id.thumbnail3:
-                startActivity(new Intent(this,JeansActivity.class));
+                intent = new Intent(this, FullScreenActivity.class);
+                intent.putExtra("EXTRA_IMAGE_URL", i.getStringExtra("image3"));
+                startActivity(intent);
+                break;
 
             /**case R.id.thumbnailFS:
                 startActivity(new Intent(this,JeansActivity.class));**/

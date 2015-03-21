@@ -69,7 +69,7 @@ public class FlickrAdapter extends ArrayAdapter<JeansDetailsActivity> {
         TextView timestamp;**/
 
         public ViewHolder(View view) {
-            image = (NetworkImageView) view.findViewById(R.id.thumbnailFS);
+            image = (NetworkImageView) view.findViewById(R.id.fullScreenImg);
             /**title = (TextView) view.findViewById(R.id.lv_title);
             if (mIsListView) {
                 author = (TextView) view.findViewById(R.id.lv_author);

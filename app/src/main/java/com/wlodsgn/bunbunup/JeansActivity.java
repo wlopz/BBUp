@@ -161,7 +161,6 @@ public class JeansActivity extends ActionBarActivity {
                 intent.putExtra(Colour, color);
                 intent.putExtra(Tipo, tipo);
                 intent.putExtra(Referencia, ref);
-                intent.putExtra(JnsDetailFSViewActivity.EXTRA_IMAGE_URL, bitmapfull);
                 intent.putExtra("image", bitmap);
                 intent.putExtra("image2", bitmap2);
                 intent.putExtra("image3", bitmap3);
