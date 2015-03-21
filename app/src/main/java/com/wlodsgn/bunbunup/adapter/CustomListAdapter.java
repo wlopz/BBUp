@@ -1,6 +1,5 @@
 package com.wlodsgn.bunbunup.adapter;
 
-import com.wlodsgn.bunbunup.JnsDetailFSViewActivity;
 import com.wlodsgn.bunbunup.R;
 import com.wlodsgn.bunbunup.app.AppController;
 import com.wlodsgn.bunbunup.model.Jeans;
