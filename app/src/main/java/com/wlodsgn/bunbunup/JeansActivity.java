@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
 import com.wlodsgn.bunbunup.adapter.CustomListAdapter;
+import com.wlodsgn.bunbunup.adapter.GridAdapter;
 import com.wlodsgn.bunbunup.app.AppController;
 import com.wlodsgn.bunbunup.model.Jeans;
 
@@ -22,6 +23,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -51,9 +53,12 @@ public class JeansActivity extends ActionBarActivity {
     // Jeans json url
     private static final String url = "http://wlodsgn.x10host.com/json/jnslst.json";
     private ProgressDialog pDialog;
-    private List<Jeans> jeansList = new ArrayList<Jeans>();
-    private ListView listView;
-    private CustomListAdapter adapter;
+    /**private List<Jeans> jeansList = new ArrayList<Jeans>();**/
+    private Grid<Jeans> jeansGrid = new ArrayList<Jeans>();
+    /**private ListView listView;**/
+    private GridView gridView;
+    /**private CustomListAdapter adapter;**/
+    private GridAdapter adapter;
     private static String Titulo="titulo";
     private static String Marca="marca";
     private static String Colour="color";
@@ -80,9 +85,9 @@ public class JeansActivity extends ActionBarActivity {
         actionBar.setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        listView = (ListView) findViewById(R.id.list);
-        adapter = new CustomListAdapter(this, jeansList);
-        listView.setAdapter(adapter);
+        gridView = (GridView) findViewById(R.id.gridView);
+        adapter = new GridAdapter(this, jeansGrid);
+        gridView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
@@ -119,7 +124,7 @@ public class JeansActivity extends ActionBarActivity {
                                 jeans.setRef(obj.getInt("ref"));
 
                                 // adding jeans to jeans array
-                                jeansList.add(jeans);
+                                /**jeansGrid.add(jeans);**/
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -143,7 +148,7 @@ public class JeansActivity extends ActionBarActivity {
         // Adding request to request queue
         /**AppController.getInstance().addToRequestQueue(JeansReq);**/
         AppController.getInstance().addToRequestQueue(jeansReq);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
@@ -159,10 +164,10 @@ public class JeansActivity extends ActionBarActivity {
                 String ref = ((TextView) view.findViewById(R.id.ref))
                         .getText().toString();
 
-                bitmap = ((Jeans) jeansList.get(position)).getThumbnailUrl();
-                bitmap2 = ((Jeans) jeansList.get(position)).getThumbnailUrl2();
-                bitmap3 = ((Jeans) jeansList.get(position)).getThumbnailUrl3();
-                bitmapfull = ((Jeans) jeansList.get(position)).getThumbnailUrlFS();
+                /**bitmap = ((Jeans) jeansGrid.get(position)).getThumbnailUrl();
+                 bitmap2 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl2();
+                 bitmap3 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl3();
+                 bitmapfull = ((Jeans) jeansGrid.get(position)).getThumbnailUrlFS();**/
                 Intent intent = new Intent(JeansActivity.this, JeansDetailsActivity.class);
                 intent.putExtra(Titulo, nombre);
                 intent.putExtra(Marca, brand);
