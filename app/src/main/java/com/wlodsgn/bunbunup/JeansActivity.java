@@ -37,8 +37,8 @@ public class JeansActivity extends ActionBarActivity {
 
     /**@Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jeans);
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_jeans);
 
 
 
@@ -74,18 +74,26 @@ public class JeansActivity extends ActionBarActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        // enabling action bar app icon and behaving it as toggle button
+        actionBar.setLogo(R.drawable.ic_main);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         listView = (ListView) findViewById(R.id.list);
         adapter = new CustomListAdapter(this, jeansList);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
-        pDialog.setMessage("Loading...");
+        pDialog.setMessage("Cargando Productos...");
         pDialog.show();
 
         // changing action bar color
         getSupportActionBar().setBackgroundDrawable(
                 new ColorDrawable(Color.parseColor("#1b1b1b")));
+
+
 
         // Creating volley request obj
         JsonArrayRequest jeansReq = new JsonArrayRequest(url,
@@ -186,9 +194,9 @@ public class JeansActivity extends ActionBarActivity {
 
     /**@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    // Inflate the menu; this adds items to the action bar if it is present.
+    getMenuInflater().inflate(R.menu.main, menu);
+    return true;
     }**/
 
 }

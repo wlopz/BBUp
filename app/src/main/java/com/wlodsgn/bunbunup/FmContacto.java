@@ -29,12 +29,12 @@ public class FmContacto extends Fragment implements View.OnClickListener {
         btnSendMail.setOnClickListener(this);
 
         //Llamada
-        Button startBtn = (Button) rootView.findViewById(R.id.makeCall);
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                makeCall();
-            }
-        });
+        /**Button startBtn = (Button) rootView.findViewById(R.id.makeCall);
+         startBtn.setOnClickListener(new View.OnClickListener() {
+         public void onClick(View view) {
+         makeCall();
+         }
+         });**/
 
         return rootView;
     }
@@ -57,22 +57,6 @@ public class FmContacto extends Fragment implements View.OnClickListener {
         email.setType("message/rfc822");
 
         startActivity(Intent.createChooser(email, "Seleciona un cliente de correo"));
-    }
-
-    protected void makeCall() {
-        Log.i("Hacer Llamada", "");
-
-        Intent phoneIntent = new Intent(Intent.ACTION_CALL);
-        phoneIntent.setData(Uri.parse("tel:1-954-696-8503"));
-
-        try {
-            startActivity(phoneIntent);
-            /*finish();*/
-            /*Log.i("Finished making a call...", "");*/
-        } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(this.getActivity(),
-                    "Call failed, please try again later.", Toast.LENGTH_SHORT).show();
-        }
     }
 
     /*@Override

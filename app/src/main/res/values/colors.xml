@@ -10,10 +10,10 @@
     <!--Verox Listview-->
     <color name="ref">#ffffffff</color>
     <color name="list_divider2">#ff000000</color>
-    <color name="list_row_start_color">#ffffff</color>
-    <color name="list_row_end_color">#ffffffff</color>
-    <color name="list_row_hover_start_color">#ffac0600</color>
-    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="list_row_start_color">#ff0a393d</color>
+    <color name="list_row_end_color">#ff0d2b3d</color>
+    <color name="list_row_hover_start_color">#ff193d0a</color>
+    <color name="list_row_hover_end_color">#ff616365</color>
 </resources>
 
     <!--

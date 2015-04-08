@@ -6,20 +6,21 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:padding="5dp"
-    android:layout_margin="10dp">
+    android:layout_margin="0dp"
+    android:background="#ff0a393d">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Contacto"
-        android:id="@+id/textView3"
+        android:id="@+id/textView33"
         android:layout_gravity="center_horizontal" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView2" >
 
         <LinearLayout
             android:orientation="vertical"
@@ -32,10 +33,10 @@
                 android:text="Asunto"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_marginTop="12dp"
-                android:id="@+id/textView1" />
+                android:id="@+id/textView12" />
 
             <EditText
-                android:id="@+id/et_EmailAsunto"
+                android:id="@+id/et_EmailAsunto2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="Asunto" >
@@ -46,10 +47,10 @@
                 android:layout_height="wrap_content"
                 android:text="Mensaje"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView10" />
+                android:id="@+id/textView11" />
 
             <EditText
-                android:id="@+id/et_EmailMensaje"
+                android:id="@+id/et_EmailMensaje2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -61,7 +62,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
-                android:id="@+id/btnEnviarMail" />
+                android:id="@+id/btnEnviarMail2" />
 
         </LinearLayout>
     </ScrollView>

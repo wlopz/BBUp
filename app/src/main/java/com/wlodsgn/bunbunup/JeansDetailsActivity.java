@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.util.Log;
 
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.ImageLoader;
@@ -14,14 +15,20 @@ import com.wlodsgn.bunbunup.app.AppController;
 /**
  * Created by WiLo on 3/4/2015.
  */
-public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener{
+
+public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener {
+
     private static String Titulo="titulo";
     private static String Marca="marca";
     private static String Colour="color";
     private static String Tipo="tipo";
     private static String Referencia="ref";
 
-    private static String bitmapfull="thumbnailUrlFS";
+    private static String bitmap="thumbnailUrl";
+    private static String bitmap2="thumbnailUrl2";
+    private static String bitmap3="thumbnailUrl3";
+
+    /**private static String bitmapfull="thumbnailUrlFS";**/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,15 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
         //Back button
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        // enabling action bar app icon and behaving it as toggle button
+        actionBar.setLogo(R.drawable.ic_main);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        //Redirect to Contacto
+        Log.i("BunBunUp", "Contacto Redirected");
 
         Intent i=getIntent();
         String titulo = i.getStringExtra(Titulo);
@@ -53,6 +69,7 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
         String ref = i.getStringExtra(Referencia);
         TextView refName = (TextView) findViewById(R.id.ref);
         refName.setText(ref);
+
 
         for (int num = 1; num <= 3; num++) {
             String pos;
@@ -85,6 +102,11 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
 
     }
 
+    /**public void startFmContacto(View vw){
+     Intent intent = new Intent(JeansDetailsActivity.this, FmContacto.class);
+     startActivity(intent);
+     }**/
+
     public void onClick(View v){
         Intent i = getIntent();
         Intent intent;
@@ -107,8 +129,10 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
                 startActivity(intent);
                 break;
 
-            /**case R.id.thumbnailFS:
-                startActivity(new Intent(this,JeansActivity.class));**/
+            case R.id.btnstrp:
+                intent = new Intent(this, CntctoDtlsActvty.class);
+                startActivity(intent);
+                break;
         }
 
     }

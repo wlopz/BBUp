@@ -60,10 +60,10 @@ public class CustomListAdapter extends BaseAdapter {
             imageLoader = AppController.getInstance().getImageLoader();
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
-            imageLoader = AppController.getInstance().getImageLoader();
+        imageLoader = AppController.getInstance().getImageLoader();
         NetworkImageView thumbNail2 = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail2);
-            imageLoader = AppController.getInstance().getImageLoader();
+        imageLoader = AppController.getInstance().getImageLoader();
         NetworkImageView thumbNail3 = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail3);
         TextView titulo = (TextView) convertView.findViewById(R.id.titulo);

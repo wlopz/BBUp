@@ -3,6 +3,7 @@ package com.wlodsgn.bunbunup;
 import java.util.ArrayList;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.MenuItemCompat.OnActionExpandListener;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.SearchView.OnQueryTextListener;
@@ -24,7 +25,7 @@ import android.widget.ListView;
 /**
  * Created by WiLo on 2/13/2015.
  */
-public class MainActivity extends ActionBarActivity implements OnQueryTextListener, OnActionExpandListener{
+public class MainActivity extends ActionBarActivity {
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -83,6 +84,10 @@ public class MainActivity extends ActionBarActivity implements OnQueryTextListen
         mDrawerList.setAdapter(adapter);
 
         // enabling action bar app icon and behaving it as toggle button
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.ic_main);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
@@ -112,29 +117,7 @@ public class MainActivity extends ActionBarActivity implements OnQueryTextListen
 
     }
 
-    @Override
-    public boolean onMenuItemActionExpand(MenuItem menuItem) {
-        Toast.makeText(getApplicationContext(), "Abriendo Busqueda", Toast.LENGTH_SHORT).show();
-        return true;
-    }
 
-    @Override
-    public boolean onMenuItemActionCollapse(MenuItem menuItem) {
-        Toast.makeText(getApplicationContext(), "Cerrando Busqueda", Toast.LENGTH_SHORT).show();
-        return true;
-    }
-
-    @Override
-    public boolean onQueryTextSubmit(String s) {
-        /*texto.setText("Buscando...\n\n" + s);*/
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String s) {
-        /*texto.setText(" \n\n" + s);*/
-        return false;
-    }
 
     /**
      * Slide menu item click listener
@@ -149,19 +132,19 @@ public class MainActivity extends ActionBarActivity implements OnQueryTextListen
         }
     }
 
-    @Override
+    /**@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+    getMenuInflater().inflate(R.menu.menu, menu);
 
-        MenuItem searchItem = menu.findItem(R.id.menu3_buscar);
+    MenuItem searchItem = menu.findItem(R.id.menu3_buscar);
 
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.setOnQueryTextListener(this);
+    SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+    searchView.setOnQueryTextListener(this);
 
-        MenuItemCompat.setOnActionExpandListener(searchItem, this);
+    MenuItemCompat.setOnActionExpandListener(searchItem, this);
 
-        return super.onCreateOptionsMenu(menu);
-    }
+    return super.onCreateOptionsMenu(menu);
+    }**/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

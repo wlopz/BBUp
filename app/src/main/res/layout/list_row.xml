@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/list_row_selector"
-    android:padding="8dp" >
+    android:padding="8dp">
 
-    <!-- Thumbnail Image -->
-    <com.android.volley.toolbox.NetworkImageView
-        android:id="@+id/thumbnail"
-        android:layout_width="80dp"
+    <com.dd.ShadowLayout
+        android:layout_width="180dp"
         android:layout_height="250dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/titulo"
-        android:layout_alignEnd="@+id/titulo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true" />
+        app:sl_dx="3dp"
+        app:sl_dy="2dp"
+        app:sl_shadowColor="#AA000000"
+        app:sl_cornerRadius="1dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignTop="@+id/thumbnail3"
+        android:layout_centerHorizontal="true">
+
+        <!-- Thumbnail Image -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/titulo"
+            android:layout_alignEnd="@+id/titulo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+    </com.dd.ShadowLayout>
 
     <!-- Thumbnail Image 2 -->
     <com.android.volley.toolbox.NetworkImageView

@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MenuActivity" >
 
-    <item
+    <!--item
         android:id="@+id/menu3_buscar"
         android:title="@string/action_settings"
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom|collapseActionView"
-        app:actionViewClass="android.support.v7.widget.SearchView"/>
+        app:actionViewClass="android.support.v7.widget.SearchView"/-->
 
 </menu>

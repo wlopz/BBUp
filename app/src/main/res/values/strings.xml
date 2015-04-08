@@ -6,7 +6,7 @@
     <string name="drawer_close">Se cerro el menu lateral</string>
     <string name="btnText">Ver Catalogo</string>
     <string name="app_name_2">Jeans</string>
-    <string name="make_call">Llamar</string>
+    <string name="app_name_3">Contacto</string>
 
     <!-- Nombres de los items -->
     <string-array name="nav_drawer_items">

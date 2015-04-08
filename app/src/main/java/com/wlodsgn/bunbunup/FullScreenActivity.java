@@ -28,8 +28,8 @@ public class FullScreenActivity extends Activity {
         ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
         NetworkImageView fullScreenView;
-                fullScreenView = (NetworkImageView) findViewById(R.id.fullScreenImg);
-                fullScreenView.setImageUrl(mImageUrl, imageLoader);
+        fullScreenView = (NetworkImageView) findViewById(R.id.fullScreenImg);
+        fullScreenView.setImageUrl(mImageUrl, imageLoader);
 
         /*((NetworkImageView) findViewById(R.id.fullScreenImg)).setImageUrl(
                 mExtras.getString("EXTRA_IMAGE_URL"), LruBitmapCache.getImageLoader());*/
