@@ -54,7 +54,7 @@ public class JeansActivity extends ActionBarActivity {
     private static final String url = "http://wlodsgn.x10host.com/json/jnslst.json";
     private ProgressDialog pDialog;
     /**private List<Jeans> jeansList = new ArrayList<Jeans>();**/
-    private Grid<Jeans> jeansGrid = new ArrayList<Jeans>();
+    private List<Jeans> jeansGrid = new ArrayList<Jeans>();
     /**private ListView listView;**/
     private GridView gridView;
     /**private CustomListAdapter adapter;**/
@@ -124,7 +124,7 @@ public class JeansActivity extends ActionBarActivity {
                                 jeans.setRef(obj.getInt("ref"));
 
                                 // adding jeans to jeans array
-                                /**jeansGrid.add(jeans);**/
+                                jeansGrid.add(jeans);
 
                             } catch (JSONException e) {
                                 e.printStackTrace();

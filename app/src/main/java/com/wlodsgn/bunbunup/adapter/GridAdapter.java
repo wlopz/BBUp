@@ -23,10 +23,10 @@ public class GridAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private Grid<Jeans> jeansItems;
+    private List<Jeans> jeansItems;
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
-    public GridAdapter(Activity activity, Grid<Jeans> jeansItems) {
+    public GridAdapter(Activity activity, List<Jeans> jeansItems) {
         this.activity = activity;
         this.jeansItems = jeansItems;
     }
@@ -53,7 +53,7 @@ public class GridAdapter extends BaseAdapter {
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.list_row, null);
+            convertView = inflater.inflate(R.layout.grid_row, null);
 
         if (imageLoader == null)
             imageLoader = AppController.getInstance().getImageLoader();
