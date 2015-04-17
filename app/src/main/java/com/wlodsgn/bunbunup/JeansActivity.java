@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
-import com.wlodsgn.bunbunup.adapter.CustomListAdapter;
 import com.wlodsgn.bunbunup.adapter.GridAdapter;
 import com.wlodsgn.bunbunup.app.AppController;
 import com.wlodsgn.bunbunup.model.Jeans;
@@ -24,7 +23,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.Response;
@@ -73,7 +71,7 @@ public class JeansActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jeans);
+        setContentView(R.layout.activity_gridjeans);
 
         //Back button
         ActionBar actionBar = getSupportActionBar();
@@ -164,10 +162,10 @@ public class JeansActivity extends ActionBarActivity {
                 String ref = ((TextView) view.findViewById(R.id.ref))
                         .getText().toString();
 
-                /**bitmap = ((Jeans) jeansGrid.get(position)).getThumbnailUrl();
+                bitmap = ((Jeans) jeansGrid.get(position)).getThumbnailUrl();
                  bitmap2 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl2();
                  bitmap3 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl3();
-                 bitmapfull = ((Jeans) jeansGrid.get(position)).getThumbnailUrlFS();**/
+                 bitmapfull = ((Jeans) jeansGrid.get(position)).getThumbnailUrlFS();
                 Intent intent = new Intent(JeansActivity.this, JeansDetailsActivity.class);
                 intent.putExtra(Titulo, nombre);
                 intent.putExtra(Marca, brand);
