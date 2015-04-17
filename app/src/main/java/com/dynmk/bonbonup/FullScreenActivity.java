@@ -1,11 +1,11 @@
-package com.wlodsgn.bunbunup;
+package com.dynmk.bonbonup;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
-import com.wlodsgn.bunbunup.app.AppController;
+import com.dynmk.bonbonup.app.AppController;
 
 /**
  * Created by Harry on 20/03/2015.

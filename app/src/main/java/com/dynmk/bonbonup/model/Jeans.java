@@ -1,6 +1,4 @@
-package com.wlodsgn.bunbunup.model;
-
-import java.util.ArrayList;
+package com.dynmk.bonbonup.model;
 
 /**
  * Created by WiLo on 3/3/2015.

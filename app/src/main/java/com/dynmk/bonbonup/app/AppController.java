@@ -1,6 +1,6 @@
-package com.wlodsgn.bunbunup.app;
+package com.dynmk.bonbonup.app;
 
-import com.wlodsgn.bunbunup.util.LruBitmapCache;
+import com.dynmk.bonbonup.util.LruBitmapCache;
 import android.app.Application;
 import android.text.TextUtils;
 

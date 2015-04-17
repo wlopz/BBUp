@@ -1,4 +1,4 @@
-package com.wlodsgn.bunbunup.adapter;
+package com.dynmk.bonbonup.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
-import com.wlodsgn.bunbunup.R;
-import com.wlodsgn.bunbunup.app.AppController;
-import com.wlodsgn.bunbunup.model.Jeans;
+import com.dynmk.bonbonup.R;
+import com.dynmk.bonbonup.app.AppController;
+import com.dynmk.bonbonup.model.Jeans;
 
 import java.util.List;
 

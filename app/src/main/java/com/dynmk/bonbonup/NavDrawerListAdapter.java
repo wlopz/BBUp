@@ -1,4 +1,4 @@
-package com.wlodsgn.bunbunup;
+package com.dynmk.bonbonup;
 
 import android.app.Activity;
 import android.content.Context;

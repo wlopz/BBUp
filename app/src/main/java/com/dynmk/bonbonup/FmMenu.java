@@ -1,17 +1,8 @@
-package com.wlodsgn.bunbunup;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.dynmk.bonbonup;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.View;

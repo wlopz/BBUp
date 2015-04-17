@@ -1,4 +1,4 @@
-package com.wlodsgn.bunbunup;
+package com.dynmk.bonbonup;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.util.Log;
 
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.ImageLoader;
-import com.wlodsgn.bunbunup.app.AppController;
+import com.dynmk.bonbonup.app.AppController;
 
 /**
  * Created by WiLo on 3/4/2015.

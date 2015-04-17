@@ -1,13 +1,13 @@
-package com.wlodsgn.bunbunup;
+package com.dynmk.bonbonup;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
-import com.wlodsgn.bunbunup.adapter.GridAdapter;
-import com.wlodsgn.bunbunup.app.AppController;
-import com.wlodsgn.bunbunup.model.Jeans;
+import com.dynmk.bonbonup.adapter.GridAdapter;
+import com.dynmk.bonbonup.app.AppController;
+import com.dynmk.bonbonup.model.Jeans;
 
 import java.util.ArrayList;
 import java.util.List;
