@@ -65,6 +65,21 @@
             android:label="@string/app_name_3" >
         </activity>
 
+        <activity android:name="com.dynmk.bonbonup.BlusasActivity"
+            android:label="@string/app_name_4"
+            android:parentActivityName="com.dynmk.bonbonup.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dynmk.bonbonup.MainActivity" />
+        </activity>
+
+        <activity android:name="com.dynmk.bonbonup.LeggingsActivity"
+            android:label="@string/app_name_5"
+            android:parentActivityName="com.dynmk.bonbonup.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dynmk.bonbonup.MainActivity" />
+        </activity>
 
     </application>
 

@@ -71,7 +71,7 @@ public class JeansActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gridjeans);
+        setContentView(R.layout.activity_jeans);
 
         //Back button
         ActionBar actionBar = getSupportActionBar();

@@ -7,6 +7,8 @@
     <string name="btnText">Ver Catalogo</string>
     <string name="app_name_2">Jeans</string>
     <string name="app_name_3">Contacto</string>
+    <string name="app_name_4">Blusas</string>
+    <string name="app_name_5">Leggings</string>
 
     <!-- Nombres de los items -->
     <string-array name="nav_drawer_items">

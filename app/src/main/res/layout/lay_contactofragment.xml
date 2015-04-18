@@ -14,7 +14,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Contacto"
         android:id="@+id/textView3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffdd190d" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,13 +33,15 @@
                 android:text="Asunto"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_marginTop="12dp"
-                android:id="@+id/textView1" />
+                android:id="@+id/textView1"
+                android:textColor="#ffdd190d" />
 
             <EditText
                 android:id="@+id/et_EmailAsunto"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:hint="Asunto" >
+                android:hint="Asunto"
+                android:textColor="#ff000000">
             </EditText>
 
             <TextView
@@ -46,7 +49,8 @@
                 android:layout_height="wrap_content"
                 android:text="Mensaje"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView10" />
+                android:id="@+id/textView10"
+                android:textColor="#ffdd190d" />
 
             <EditText
                 android:id="@+id/et_EmailMensaje"
@@ -55,7 +59,8 @@
                 android:gravity="top"
                 android:hint="Mensaje"
                 android:inputType="textMultiLine"
-                android:lines="5" />
+                android:lines="5"
+                android:textColor="#ff000000" />
 
             <Button
                 android:layout_width="fill_parent"
