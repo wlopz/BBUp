@@ -61,10 +61,6 @@
                 android:value="com.dynmk.bonbonup.JeansDetailsActivity" />
         </activity>
 
-        <activity android:name="com.dynmk.bonbonup.CntctoDtlsActvty"
-            android:label="@string/app_name_3" >
-        </activity>
-
         <activity android:name="com.dynmk.bonbonup.BlusasActivity"
             android:label="@string/app_name_4"
             android:parentActivityName="com.dynmk.bonbonup.MainActivity" >

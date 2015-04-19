@@ -129,10 +129,6 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
                 startActivity(intent);
                 break;
 
-            case R.id.btnstrp:
-                intent = new Intent(this, CntctoDtlsActvty.class);
-                startActivity(intent);
-                break;
         }
 
     }

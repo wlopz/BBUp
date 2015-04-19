@@ -18,8 +18,8 @@
         android:text="@string/btnText"
         android:id="@+id/button"
         android:onClick="startMenuActivity"
-        android:layout_marginBottom="52dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

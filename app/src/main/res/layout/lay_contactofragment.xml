@@ -8,15 +8,6 @@
     android:padding="5dp"
     android:layout_margin="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Contacto"
-        android:id="@+id/textView3"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#ffdd190d" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,7 +31,9 @@
                 android:id="@+id/et_EmailAsunto"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:hint="Asunto"
+                android:hint=">"
+                android:textIsSelectable="false"
+                android:textColorHint="#ff616365"
                 android:textColor="#ff000000">
             </EditText>
 
@@ -57,9 +50,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:hint="Mensaje"
                 android:inputType="textMultiLine"
                 android:lines="5"
+                android:textColorHint="#ff616365"
+                android:textIsSelectable="false"
+                android:singleLine="false"
+                android:hint="Importante: Le sugerimos primero contactar a su vendedor local para precios y disponibilidad de productos."
                 android:textColor="#ff000000" />
 
             <Button
