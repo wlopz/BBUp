@@ -9,6 +9,7 @@
     <string name="app_name_3">Contacto</string>
     <string name="app_name_4">Blusas</string>
     <string name="app_name_5">Leggings</string>
+    <string name="app_name_6"></string>
 
     <!-- Nombres de los items -->
     <string-array name="nav_drawer_items">

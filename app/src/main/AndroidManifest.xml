@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name="com.dynmk.bonbonup.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name_6" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +44,7 @@
         </activity>
 
         <activity android:name="com.dynmk.bonbonup.JeansDetailsActivity"
-            android:label="@string/app_name_2"
+            android:label="@string/app_name_6"
             android:parentActivityName="com.dynmk.bonbonup.JeansActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
