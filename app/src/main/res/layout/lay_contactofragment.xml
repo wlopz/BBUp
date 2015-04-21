@@ -25,7 +25,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_marginTop="12dp"
                 android:id="@+id/textView1"
-                android:textColor="#ffdd190d" />
+                android:textColor="#ffdd190d"
+                android:typeface="monospace" />
 
             <EditText
                 android:id="@+id/et_EmailAsunto"
@@ -34,7 +35,8 @@
                 android:hint=">"
                 android:textIsSelectable="false"
                 android:textColorHint="#ff616365"
-                android:textColor="#ff000000">
+                android:textColor="#ff000000"
+                android:typeface="monospace">
             </EditText>
 
             <TextView
@@ -43,7 +45,8 @@
                 android:text="Mensaje"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/textView10"
-                android:textColor="#ffdd190d" />
+                android:textColor="#ffdd190d"
+                android:typeface="monospace" />
 
             <EditText
                 android:id="@+id/et_EmailMensaje"
@@ -56,13 +59,15 @@
                 android:textIsSelectable="false"
                 android:singleLine="false"
                 android:hint="Importante: Le sugerimos primero contactar a su vendedor local para precios y disponibilidad de productos."
-                android:textColor="#ff000000" />
+                android:textColor="#ff000000"
+                android:typeface="monospace" />
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
-                android:id="@+id/btnEnviarMail" />
+                android:id="@+id/btnEnviarMail"
+                android:typeface="monospace" />
 
         </LinearLayout>
     </ScrollView>

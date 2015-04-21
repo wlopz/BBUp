@@ -49,7 +49,8 @@
                 android:layout_alignStart="@+id/imageView"
                 android:layout_marginTop="20dp"
                 android:textColor="#ffdd190d"
-                android:layout_marginLeft="15dp" />
+                android:layout_marginLeft="15dp"
+                android:typeface="monospace" />
         </RelativeLayout>
     </ScrollView>
 

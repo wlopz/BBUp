@@ -67,7 +67,10 @@
                 android:layout_below="@+id/shadowthumbnail"
                 android:textStyle="bold"
                 android:textSize="40dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:shadowColor="#ff000000"
+                android:singleLine="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,7 +82,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,7 +95,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +108,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -115,7 +121,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -127,7 +134,8 @@
                 android:layout_toRightOf="@+id/marcatitle"
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -139,7 +147,8 @@
                 android:layout_alignLeft="@+id/color"
                 android:layout_alignStart="@+id/color"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -151,7 +160,8 @@
                 android:layout_toRightOf="@+id/marcatitle"
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -163,7 +173,8 @@
                 android:layout_toRightOf="@+id/marcatitle"
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:typeface="monospace" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -176,7 +187,8 @@
                 android:layout_below="@+id/reftitle"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="31dp" />
+                android:layout_marginTop="31dp"
+                android:typeface="monospace" />
 
             <!-- basic bootstrap button -->
 
