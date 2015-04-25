@@ -2,6 +2,7 @@ package com.dynmk.bonbonup;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -63,6 +64,7 @@ public class MainActivity extends ActionBarActivity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
+        navDrawerItems.add(new NavDrawerItem("JeansActivity", navMenuIcons.getResourceId(1, -1)));
         // Catologo
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // old Contacto (Pedidos)
@@ -122,8 +124,20 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position,
                                 long id) {
-            // display view for selected nav drawer item
-            displayView(position);
+            switch(position) {
+                case 0:
+                    displayView(position);
+                    break;
+
+                case 1:
+                    displayView(position);
+                    break;
+
+                case 2:
+                    Intent intent = new Intent(MainActivity.this, JeansActivity.class);
+                    startActivity(intent);
+                    break;
+            }
         }
     }
 
