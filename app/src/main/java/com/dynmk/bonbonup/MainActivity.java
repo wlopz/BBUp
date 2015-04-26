@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-        navDrawerItems.add(new NavDrawerItem("JeansActivity", navMenuIcons.getResourceId(1, -1)));
+        navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(0, -1)));
         // Catologo
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // old Contacto (Pedidos)
