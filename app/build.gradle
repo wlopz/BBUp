@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.github.dmytrodanylyk.shadow-layout:library:1.0.2'
     compile 'com.beardedhen:androidbootstrap:1.2.1'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
 }

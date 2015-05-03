@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class FmContacto extends Fragment implements View.OnClickListener {
 
     @Override
@@ -23,14 +20,6 @@ public class FmContacto extends Fragment implements View.OnClickListener {
         //Correo
         final Button btnSendMail = (Button) rootView.findViewById(R.id.btnEnviarMail);
         btnSendMail.setOnClickListener(this);
-
-        //Llamada
-        /**Button startBtn = (Button) rootView.findViewById(R.id.makeCall);
-         startBtn.setOnClickListener(new View.OnClickListener() {
-         public void onClick(View view) {
-         makeCall();
-         }
-         });**/
 
         return rootView;
     }
@@ -54,12 +43,5 @@ public class FmContacto extends Fragment implements View.OnClickListener {
 
         startActivity(Intent.createChooser(email, "Seleciona un cliente de correo"));
     }
-
-    /*@Override
-    public boolean onCreateOptionsMenu(Contacto contacto) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.contacto, contacto);
-        return true;
-    }*/
 
 }

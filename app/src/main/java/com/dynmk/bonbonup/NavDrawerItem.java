@@ -1,8 +1,5 @@
 package com.dynmk.bonbonup;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class NavDrawerItem {
 
     private String title;

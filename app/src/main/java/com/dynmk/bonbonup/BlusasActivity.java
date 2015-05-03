@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 
-/**
- * Created by WILO on 4/18/2015.
- */
 public class BlusasActivity extends ActionBarActivity {
 
     @Override

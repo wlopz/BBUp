@@ -16,9 +16,6 @@ import com.dynmk.bonbonup.model.Jeans;
 
 import java.util.List;
 
-/**
- * Created by WILO on 4/3/2015.
- */
 public class GridAdapter extends BaseAdapter {
 
     private Activity activity;

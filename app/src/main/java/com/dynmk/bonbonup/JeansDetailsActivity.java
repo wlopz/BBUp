@@ -7,14 +7,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.util.Log;
-
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.ImageLoader;
 import com.dynmk.bonbonup.app.AppController;
-
-/**
- * Created by WiLo on 3/4/2015.
- */
 
 public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener {
 
@@ -28,13 +23,10 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
     private static String bitmap2="thumbnailUrl2";
     private static String bitmap3="thumbnailUrl3";
 
-    /**private static String bitmapfull="thumbnailUrlFS";**/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jeansdetails);
-        /**getSupportActionBar().hide();**/
 
         //Back button
         ActionBar actionBar = getSupportActionBar();
@@ -101,11 +93,6 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
         }
 
     }
-
-    /**public void startFmContacto(View vw){
-     Intent intent = new Intent(JeansDetailsActivity.this, FmContacto.class);
-     startActivity(intent);
-     }**/
 
     public void onClick(View v){
         Intent i = getIntent();

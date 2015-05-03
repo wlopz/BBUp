@@ -1,8 +1,5 @@
 package com.dynmk.bonbonup.model;
 
-/**
- * Created by WiLo on 3/3/2015.
- */
 public class Jeans {
     private String titulo, thumbnailUrl, thumbnailUrl2, thumbnailUrl3;
     private int ref;
@@ -10,13 +7,12 @@ public class Jeans {
     private String color;
     private String tipo;
 
-    private String thumbnailUrlFS;
 
 
     public Jeans() {
     }
 
-    public Jeans(String name, String thumbnailUrl, String thumbnailUrlFS, String thumbnailUrl2, String thumbnailUrl3, int ref, String marca, String color, String tipo) {
+    public Jeans(String name, String thumbnailUrl, String thumbnailUrl2, String thumbnailUrl3, int ref, String marca, String color, String tipo) {
         this.titulo = name;
         this.thumbnailUrl = thumbnailUrl;
         this.thumbnailUrl2 = thumbnailUrl2;
@@ -26,7 +22,6 @@ public class Jeans {
         this.color = color;
         this.tipo = tipo;
 
-        this.thumbnailUrlFS = thumbnailUrlFS;
     }
 
     public String getTitulo() {
@@ -44,14 +39,6 @@ public class Jeans {
     public void setThumbnailUrl(String thumbnailUrl) {
         this.thumbnailUrl = thumbnailUrl;
     }
-
-    public String getThumbnailUrlFS() {
-        return thumbnailUrlFS;
-    }
-
-    /**public void setThumbnailUrlFS(String thumbnailUrlFS) {
-        this.thumbnailUrlFS = thumbnailUrlFS;
-    }**/
 
     public String getThumbnailUrl2() {
         return thumbnailUrl2;

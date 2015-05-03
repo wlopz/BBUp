@@ -4,18 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-
 import com.dynmk.bonbonup.adapter.GridAdapter;
 import com.dynmk.bonbonup.app.AppController;
 import com.dynmk.bonbonup.model.Jeans;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -24,26 +20,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
-
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 
-/**
- * Created by WiLo on 2/27/2015.
- */
 public class JeansActivity extends ActionBarActivity {
-
-    /**@Override
-    public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_jeans);
-
-
-
-
-    }**/
 
     // Log tag
     private static final String TAG = JeansActivity.class.getSimpleName();
@@ -51,11 +33,8 @@ public class JeansActivity extends ActionBarActivity {
     // Jeans json url
     private static final String url = "http://wlodsgn.x10host.com/json/jnslst.json";
     private ProgressDialog pDialog;
-    /**private List<Jeans> jeansList = new ArrayList<Jeans>();**/
     private List<Jeans> jeansGrid = new ArrayList<Jeans>();
-    /**private ListView listView;**/
     private GridView gridView;
-    /**private CustomListAdapter adapter;**/
     private GridAdapter adapter;
     private static String Titulo="titulo";
     private static String Marca="marca";
@@ -65,8 +44,6 @@ public class JeansActivity extends ActionBarActivity {
     private static String bitmap="thumbnailUrl";
     private static String bitmap2="thumbnailUrl2";
     private static String bitmap3="thumbnailUrl3";
-
-    private static String bitmapfull="thumbnailUrlFS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,7 +121,6 @@ public class JeansActivity extends ActionBarActivity {
         });
 
         // Adding request to request queue
-        /**AppController.getInstance().addToRequestQueue(JeansReq);**/
         AppController.getInstance().addToRequestQueue(jeansReq);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
@@ -163,9 +139,8 @@ public class JeansActivity extends ActionBarActivity {
                         .getText().toString();
 
                 bitmap = ((Jeans) jeansGrid.get(position)).getThumbnailUrl();
-                 bitmap2 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl2();
-                 bitmap3 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl3();
-                 bitmapfull = ((Jeans) jeansGrid.get(position)).getThumbnailUrlFS();
+                bitmap2 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl2();
+                bitmap3 = ((Jeans) jeansGrid.get(position)).getThumbnailUrl3();
                 Intent intent = new Intent(JeansActivity.this, JeansDetailsActivity.class);
                 intent.putExtra(Titulo, nombre);
                 intent.putExtra(Marca, brand);
@@ -194,12 +169,5 @@ public class JeansActivity extends ActionBarActivity {
             pDialog = null;
         }
     }
-
-    /**@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.main, menu);
-    return true;
-    }**/
 
 }

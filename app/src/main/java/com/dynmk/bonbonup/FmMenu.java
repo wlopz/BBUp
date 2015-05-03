@@ -1,11 +1,10 @@
 package com.dynmk.bonbonup;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.support.v4.app.Fragment;
@@ -13,13 +12,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
-
+import com.viewpagerindicator.LinePageIndicator;
 import java.util.List;
 import java.util.ArrayList;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class FmMenu extends Fragment {
 
     int[] imagenes = {
@@ -48,22 +44,16 @@ public class FmMenu extends Fragment {
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        //Set the pager with an adapter
+        ViewPager pager = (ViewPager)rootView.findViewById(R.id.pager);
+        /**pager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));**/
+
+        //Bind the title indicator to the adapter
+        LinePageIndicator lineIndicator = (LinePageIndicator)rootView.findViewById(R.id.lines);
+        lineIndicator.setViewPager(pager);
+
         return rootView;
 
-        //imagen
-        /**ImageView imagen = (ImageView) rootView.findViewById(R.id.imageJns);
-
-         imagen.setOnClickListener(new OnClickListener() {
-
-        @Override
-        public void onClick(View v) {
-
-        startActivity(new Intent(getActivity(),JeansActivity.class));
-
-        }
-
-        });
-         return rootView;**/
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -88,28 +78,6 @@ public class FmMenu extends Fragment {
         public int getCount() {
             return fragmentos.size();
         }
-
-        /**@Override
-        public Object instantiateItem(View collection, final int pos) {
-        LayoutInflater inflater = (LayoutInflater) collection.getContext()
-        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-
-        View page = inflater.inflate(R.layout.activity_jeans, null);
-
-        page.setOnClickListener(new OnClickListener(){
-        @Override
-        public void onClick(View v) {
-
-        startActivity(new Intent(getActivity(),JeansActivity.class));
-
-        }
-        });
-
-
-        ((ViewPager) collection).addView(page, 0);
-        return page;
-        }**/
 
     }
 
@@ -155,8 +123,6 @@ public class FmMenu extends Fragment {
 
                 @Override
                 public void onClick(View v) {
-
-                    Intent activityIntent = new Intent();
 
                     Intent intent = new Intent();
 

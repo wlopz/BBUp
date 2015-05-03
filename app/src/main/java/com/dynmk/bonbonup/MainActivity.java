@@ -18,9 +18,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class MainActivity extends ActionBarActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -140,20 +137,6 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
-
-    /**@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.menu, menu);
-
-    MenuItem searchItem = menu.findItem(R.id.menu3_buscar);
-
-    SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-    searchView.setOnQueryTextListener(this);
-
-    MenuItemCompat.setOnActionExpandListener(searchItem, this);
-
-    return super.onCreateOptionsMenu(menu);
-    }**/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

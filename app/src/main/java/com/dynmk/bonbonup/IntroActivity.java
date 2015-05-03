@@ -7,9 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class IntroActivity extends Activity {
 
     @Override

@@ -8,12 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
-/**
- * Created by WiLo on 2/13/2015.
- */
 public class NavDrawerListAdapter extends BaseAdapter {
 
     private Context context;
