@@ -2,6 +2,7 @@ package com.dynmk.bonbonup;
 
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 import com.viewpagerindicator.LinePageIndicator;
 import java.util.List;
 import java.util.ArrayList;
@@ -32,6 +34,27 @@ public class FmMenu extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.lay_menufragment, container, false);
+
+        //Custom text
+        String fontPath = "fonts/Mistral.ttf";
+        String fontPath2 = "fonts/AvenirLTStd-Light.otf";
+        String fontPath3 = "fonts/AvenirLTStd-Roman.otf";
+
+        TextView cstmTxt1 = (TextView) rootView.findViewById(R.id.customtext1);
+        Typeface tf1 = Typeface.createFromAsset(getActivity().getAssets(),fontPath);
+        cstmTxt1.setTypeface(tf1);
+
+        TextView cstmTxt2 = (TextView) rootView.findViewById(R.id.customtext2);
+        Typeface tf2 = Typeface.createFromAsset(getActivity().getAssets(),fontPath2);
+        cstmTxt2.setTypeface(tf2);
+
+        TextView cstmTxt3 = (TextView) rootView.findViewById(R.id.customtext3);
+        Typeface tf3 = Typeface.createFromAsset(getActivity().getAssets(),fontPath3);
+        cstmTxt3.setTypeface(tf3);
+
+        TextView cstmTxt4 = (TextView) rootView.findViewById(R.id.mueva_img);
+        Typeface tf4 = Typeface.createFromAsset(getActivity().getAssets(),fontPath2);
+        cstmTxt4.setTypeface(tf4);
 
         //galeria de imagenes
 

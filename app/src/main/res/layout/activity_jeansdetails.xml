@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff">
+    android:background="#ff4090ac">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -35,6 +36,17 @@
 
             </com.dd.ShadowLayout>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullscrn_lrgimg"
+                android:layout_alignBottom="@+id/shadowthumbnail"
+                android:layout_toLeftOf="@+id/color"
+                android:layout_toStartOf="@+id/color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/fullscrn_ic" />
+
             <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -47,6 +59,17 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="24dp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullscrn_smallimg1"
+                android:background="@drawable/fullscrn_ic_smallimg"
+                android:layout_alignBottom="@+id/thumbnail2"
+                android:layout_alignLeft="@+id/thumbnail2"
+                android:layout_alignStart="@+id/thumbnail2"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp" />
+
             <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -55,6 +78,18 @@
                 android:layout_alignBottom="@+id/shadowthumbnail"
                 android:layout_alignLeft="@+id/thumbnail2"
                 android:layout_alignStart="@+id/thumbnail2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullscrn_smallimg2"
+                android:layout_alignBottom="@+id/thumbnail3"
+                android:layout_alignLeft="@+id/thumbnail3"
+                android:layout_alignStart="@+id/thumbnail3"
+                android:background="@drawable/fullscrn_ic_smallimg"
+                android:focusableInTouchMode="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="3dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,7 +104,8 @@
                 android:textIsSelectable="false"
                 android:shadowColor="#ff000000"
                 android:singleLine="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +118,8 @@
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,7 +132,8 @@
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -108,7 +146,8 @@
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -121,7 +160,8 @@
                 android:layout_alignParentStart="true"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,7 +174,8 @@
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -147,7 +188,8 @@
                 android:layout_alignStart="@+id/color"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -160,7 +202,8 @@
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -173,21 +216,36 @@
                 android:layout_toEndOf="@+id/marcatitle"
                 android:textSize="15dp"
                 android:textIsSelectable="false"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Contacte a su vendedor local para precios y disponibilidad de productos."
-                android:id="@+id/textView3"
+                android:id="@+id/info"
                 android:textColor="#ffdd190d"
                 android:textSize="15dp"
                 android:layout_below="@+id/reftitle"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="31dp"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_marginLeft="6sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="(Haz click en las imagenes para expandir)"
+                android:id="@+id/hazclick"
+                android:layout_below="@+id/shadowthumbnail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffdd190d"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="3sp" />
 
             <!-- basic bootstrap button -->
 

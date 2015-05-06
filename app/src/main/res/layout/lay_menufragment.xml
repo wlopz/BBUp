@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="227dp"
                 tools:context=".FmMenu"
-                android:layout_below="@+id/textView4"
+                android:layout_below="@+id/customtext3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="25dp" />
@@ -38,28 +38,74 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/pager" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:background="@drawable/note"
-                android:layout_below="@+id/pager"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="39dp" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="SELECCIONA TU PRODUCTO:"
-                android:id="@+id/textView4"
+                android:id="@+id/customtext3"
                 android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/imageView"
-                android:layout_alignStart="@+id/imageView"
                 android:layout_marginTop="20dp"
                 android:textColor="#ffdd190d"
                 android:layout_marginLeft="15dp"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Siempre Bella"
+                android:id="@+id/customtext1"
+                android:layout_below="@+id/lines"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textColor="#ff4ebadd"
+                android:textSize="50sp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="En Bon Bon Up nos encanta que la mujer se sienta bien tanto por dentro como por fuera. Por tál razón ponemos a su total alcance todas las herramientas para que siempre este bella."
+                android:id="@+id/customtext2"
+                android:layout_below="@+id/customtext1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:textColor="#ffdd190d"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignTop="@+id/pager"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="91dp"
+                android:background="@drawable/arrow_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/arrow_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="(Mueva imagenes de izquierda a derecha)"
+                android:id="@+id/mueva_img"
+                android:layout_below="@+id/customtext3"
+                android:layout_centerHorizontal="true"
+                android:textSize="11sp"
+                android:textColor="#ff4ebadd" />
         </RelativeLayout>
     </ScrollView>
 

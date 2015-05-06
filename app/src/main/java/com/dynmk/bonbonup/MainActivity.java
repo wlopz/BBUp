@@ -62,6 +62,8 @@ public class MainActivity extends ActionBarActivity {
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
         navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems.add(new NavDrawerItem("Blusas", navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems.add(new NavDrawerItem("Leggings", navMenuIcons.getResourceId(0, -1)));
         // Catologo
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // old Contacto (Pedidos)
@@ -134,6 +136,17 @@ public class MainActivity extends ActionBarActivity {
                     Intent intent = new Intent(MainActivity.this, JeansActivity.class);
                     startActivity(intent);
                     break;
+
+                case 3:
+                    Intent blusas = new Intent(MainActivity.this, BlusasActivity.class);
+                    startActivity(blusas);
+                    break;
+
+                case 4:
+                    Intent leggings = new Intent(MainActivity.this, LeggingsActivity.class);
+                    startActivity(leggings);
+                    break;
+
             }
         }
     }
@@ -160,11 +173,14 @@ public class MainActivity extends ActionBarActivity {
             case 0:
                 fragment = new FmMenu();
                 break;
+
             case 1:
                 fragment = new FmContacto();
                 break;
+
             default:
                 break;
+
         }
 
         if (fragment != null) {

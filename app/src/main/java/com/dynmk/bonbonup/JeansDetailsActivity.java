@@ -1,6 +1,7 @@
 package com.dynmk.bonbonup;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -27,6 +28,54 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jeansdetails);
+
+        //Custom text
+        String fontPath = "fonts/AvenirLTStd-Roman.otf";
+        String fontPath2 = "fonts/AvenirLTStd-Light.otf";
+
+        TextView cstmTxt1 = (TextView) findViewById(R.id.titulo);
+        Typeface tf1 = Typeface.createFromAsset(getAssets(),fontPath);
+        cstmTxt1.setTypeface(tf1);
+
+        TextView cstmTxt2 = (TextView) findViewById(R.id.colortitle);
+        Typeface tf2 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt2.setTypeface(tf2);
+
+        TextView cstmTxt3 = (TextView) findViewById(R.id.color);
+        Typeface tf3 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt3.setTypeface(tf3);
+
+        TextView cstmTxt4 = (TextView) findViewById(R.id.tipotitle);
+        Typeface tf4 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt4.setTypeface(tf4);
+
+        TextView cstmTxt5 = (TextView) findViewById(R.id.tipo);
+        Typeface tf5 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt5.setTypeface(tf5);
+
+        TextView cstmTxt6 = (TextView) findViewById(R.id.marcatitle);
+        Typeface tf6 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt6.setTypeface(tf6);
+
+        TextView cstmTxt7 = (TextView) findViewById(R.id.marca);
+        Typeface tf7 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt7.setTypeface(tf7);
+
+        TextView cstmTxt8 = (TextView) findViewById(R.id.reftitle);
+        Typeface tf8 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt8.setTypeface(tf8);
+
+        TextView cstmTxt9 = (TextView) findViewById(R.id.ref);
+        Typeface tf9 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt9.setTypeface(tf9);
+
+        TextView cstmTxt10 = (TextView) findViewById(R.id.info);
+        Typeface tf10 = Typeface.createFromAsset(getAssets(),fontPath);
+        cstmTxt10.setTypeface(tf10);
+
+        TextView cstmTxt11 = (TextView) findViewById(R.id.hazclick);
+        Typeface tf11 = Typeface.createFromAsset(getAssets(),fontPath2);
+        cstmTxt11.setTypeface(tf11);
 
         //Back button
         ActionBar actionBar = getSupportActionBar();

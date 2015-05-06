@@ -7,6 +7,10 @@
     </style>
 
     <style name="LinePageStyle" parent="Widget.TabPageIndicator">
+
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
         <item name="android:colorActivatedHighlight">#ffdd190d</item>
         <item name="android:paddingLeft">20dp</item>
         <item name="android:paddingRight">20dp</item>
@@ -14,7 +18,7 @@
         <item name="android:fadingEdgeLength">8dp</item>
     </style>
 
-    <style name="Fullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Fullscreen" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
     </style>
 
