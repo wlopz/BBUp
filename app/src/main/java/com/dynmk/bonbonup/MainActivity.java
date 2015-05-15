@@ -58,12 +58,12 @@ public class MainActivity extends ActionBarActivity {
 
         // agregar un nuevo item al menu deslizante
         // Menu
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(2, -1)));
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-        navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(0, -1)));
-        navDrawerItems.add(new NavDrawerItem("Blusas", navMenuIcons.getResourceId(0, -1)));
-        navDrawerItems.add(new NavDrawerItem("Leggings", navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems.add(new NavDrawerItem("Blusas", navMenuIcons.getResourceId(4, -1)));
+        navDrawerItems.add(new NavDrawerItem("Leggings", navMenuIcons.getResourceId(5, -1)));
         // Catologo
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // old Contacto (Pedidos)

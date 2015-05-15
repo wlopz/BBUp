@@ -21,6 +21,10 @@
     <array name="nav_drawer_icons">
         <item>@drawable/ic_whats_hot</item>
         <item>@drawable/ic_people</item>
+        <item>@drawable/ic_contacto</item>
+        <item>@drawable/ic_jeans</item>
+        <item>@drawable/ic_blusas</item>
+        <item>@drawable/ic_leggings</item>
     </array>
 
     <!-- Content Description -->

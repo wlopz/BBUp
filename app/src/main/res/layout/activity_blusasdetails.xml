@@ -22,7 +22,10 @@
                 app:sl_dy="2dp"
                 app:sl_shadowColor="#AA000000"
                 app:sl_cornerRadius="1dp"
-                android:id="@+id/shadowthumbnail">
+                android:id="@+id/shadowthumbnail"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/hazclick"
+                android:layout_alignEnd="@+id/hazclick">
 
                 <com.android.volley.toolbox.NetworkImageView
                     android:layout_width="match_parent"
@@ -40,56 +43,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/fullscrn_lrgimg"
-                android:layout_alignBottom="@+id/shadowthumbnail"
-                android:layout_toLeftOf="@+id/color"
-                android:layout_toStartOf="@+id/color"
+                android:background="@drawable/fullscrn_ic"
                 android:layout_marginBottom="10dp"
-                android:layout_marginRight="11dp"
-                android:background="@drawable/fullscrn_ic" />
-
-            <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/thumbnail2"
-                android:onClick="onClick"
-                android:layout_marginRight="37dp"
-                android:layout_marginEnd="37dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="24dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/fullscrn_smallimg1"
-                android:background="@drawable/fullscrn_ic_smallimg"
-                android:layout_alignBottom="@+id/thumbnail2"
-                android:layout_alignLeft="@+id/thumbnail2"
-                android:layout_alignStart="@+id/thumbnail2"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="20dp" />
-
-            <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/thumbnail3"
-                android:onClick="onClick"
                 android:layout_alignBottom="@+id/shadowthumbnail"
-                android:layout_alignLeft="@+id/thumbnail2"
-                android:layout_alignStart="@+id/thumbnail2" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/fullscrn_smallimg2"
-                android:layout_alignBottom="@+id/thumbnail3"
-                android:layout_alignLeft="@+id/thumbnail3"
-                android:layout_alignStart="@+id/thumbnail3"
-                android:background="@drawable/fullscrn_ic_smallimg"
-                android:focusableInTouchMode="false"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="3dp" />
+                android:layout_toRightOf="@+id/tipo"
+                android:layout_toEndOf="@+id/tipo" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -100,7 +58,7 @@
                 android:textColor="#ffdd190d"
                 android:layout_below="@+id/shadowthumbnail"
                 android:textStyle="bold"
-                android:textSize="40dp"
+                android:textSize="30dp"
                 android:textIsSelectable="false"
                 android:shadowColor="#ff000000"
                 android:singleLine="false"
@@ -189,7 +147,7 @@
                 android:textSize="15dp"
                 android:textIsSelectable="false"
                 android:typeface="monospace"
-                android:layout_marginLeft="6sp" />
+                android:layout_marginLeft="1sp" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import com.dynmk.bonbonup.adapter.GridAdapter;
+import com.dynmk.bonbonup.adapter.JeansGridAdapter;
 import com.dynmk.bonbonup.app.AppController;
 import com.dynmk.bonbonup.model.Jeans;
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class JeansActivity extends ActionBarActivity {
     private ProgressDialog pDialog;
     private List<Jeans> jeansGrid = new ArrayList<Jeans>();
     private GridView gridView;
-    private GridAdapter adapter;
+    private JeansGridAdapter adapter;
     private static String Titulo="titulo";
     private static String Marca="marca";
     private static String Colour="color";
@@ -61,7 +61,7 @@ public class JeansActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
         gridView = (GridView) findViewById(R.id.gridView);
-        adapter = new GridAdapter(this, jeansGrid);
+        adapter = new JeansGridAdapter(this, jeansGrid);
         gridView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(this);

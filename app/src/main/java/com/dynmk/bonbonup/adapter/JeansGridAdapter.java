@@ -16,14 +16,14 @@ import com.dynmk.bonbonup.model.Jeans;
 
 import java.util.List;
 
-public class GridAdapter extends BaseAdapter {
+public class JeansGridAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
     private List<Jeans> jeansItems;
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
-    public GridAdapter(Activity activity, List<Jeans> jeansItems) {
+    public JeansGridAdapter(Activity activity, List<Jeans> jeansItems) {
         this.activity = activity;
         this.jeansItems = jeansItems;
     }
