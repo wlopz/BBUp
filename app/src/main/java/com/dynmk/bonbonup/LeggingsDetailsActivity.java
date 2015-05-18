@@ -12,7 +12,7 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.ImageLoader;
 import com.dynmk.bonbonup.app.AppController;
 
-public class JeansDetailsActivity extends ActionBarActivity implements View.OnClickListener {
+public class LeggingsDetailsActivity extends ActionBarActivity implements View.OnClickListener {
 
     private static String Titulo="titulo";
     private static String Marca="marca";
@@ -27,7 +27,7 @@ public class JeansDetailsActivity extends ActionBarActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jeansdetails);
+        setContentView(R.layout.activity_leggingsdetails);
 
         //Custom text
         String fontPath = "fonts/AvenirLTStd-Roman.otf";

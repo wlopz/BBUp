@@ -57,16 +57,6 @@
                 android:value="com.dynmk.bonbonup.JeansActivity" />
         </activity>
 
-
-        <activity android:name="com.dynmk.bonbonup.FullScreenActivity"
-            android:label="@string/app_name_2"
-            android:parentActivityName="com.dynmk.bonbonup.JeansDetailsActivity"
-            android:theme="@style/Fullscreen"> />
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.dynmk.bonbonup.JeansDetailsActivity" />
-        </activity>
-
         <activity android:name="com.dynmk.bonbonup.BlusasActivity"
             android:label="@string/app_name_4"
             android:parentActivityName="com.dynmk.bonbonup.MainActivity" >
@@ -89,6 +79,23 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dynmk.bonbonup.MainActivity" />
+        </activity>
+
+        <activity android:name="com.dynmk.bonbonup.LeggingsDetailsActivity"
+            android:label="@string/app_name_6"
+            android:parentActivityName="com.dynmk.bonbonup.LeggingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dynmk.bonbonup.LeggingsActivity" />
+        </activity>
+
+        <activity android:name="com.dynmk.bonbonup.FullScreenActivity"
+            android:label="@string/app_name_2"
+            android:parentActivityName="com.dynmk.bonbonup.JeansDetailsActivity"
+            android:theme="@style/Fullscreen"> />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dynmk.bonbonup.JeansDetailsActivity" />
         </activity>
 
     </application>

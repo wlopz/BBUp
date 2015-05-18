@@ -11,29 +11,29 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.dynmk.bonbonup.R;
 import com.dynmk.bonbonup.app.AppController;
-import com.dynmk.bonbonup.model.Jeans;
+import com.dynmk.bonbonup.model.Leggings;
 import java.util.List;
 
-public class JeansGridAdapter extends BaseAdapter {
+public class LeggingsGridAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Jeans> jeansItems;
+    private List<Leggings> leggingsItems;
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
-    public JeansGridAdapter(Activity activity, List<Jeans> jeansItems) {
+    public LeggingsGridAdapter(Activity activity, List<Leggings> leggingsItems) {
         this.activity = activity;
-        this.jeansItems = jeansItems;
+        this.leggingsItems = leggingsItems;
     }
 
     @Override
     public int getCount() {
-        return jeansItems.size();
+        return leggingsItems.size();
     }
 
     @Override
     public Object getItem(int location) {
-        return jeansItems.get(location);
+        return leggingsItems.get(location);
     }
 
     @Override
@@ -66,8 +66,8 @@ public class JeansGridAdapter extends BaseAdapter {
         TextView tipo = (TextView) convertView.findViewById(R.id.tipo);
         TextView ref = (TextView) convertView.findViewById(R.id.ref);
 
-        // getting verox jeans data for the row
-        Jeans m = jeansItems.get(position);
+        // getting leggings data for the row
+        Leggings m = leggingsItems.get(position);
 
         // thumbnail image
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
