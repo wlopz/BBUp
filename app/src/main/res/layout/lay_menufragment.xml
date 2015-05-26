@@ -100,11 +100,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="(Mueva imagenes de izquierda a derecha)"
+                android:text="(Desliza las imágenes de un lado al otro y haz click para acceder al producto)"
                 android:id="@+id/mueva_img"
                 android:layout_below="@+id/customtext3"
                 android:layout_centerHorizontal="true"
-                android:textSize="11sp"
+                android:textSize="10sp"
                 android:textColor="#ff4ebadd" />
         </RelativeLayout>
     </ScrollView>
