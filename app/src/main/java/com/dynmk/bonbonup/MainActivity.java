@@ -61,10 +61,10 @@ public class MainActivity extends ActionBarActivity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(2, -1)));
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(3, -1)));
-        navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(4, -1)));
+        navDrawerItems.add(new NavDrawerItem("Leggings", navMenuIcons.getResourceId(4, -1)));
         navDrawerItems.add(new NavDrawerItem("Blusas", navMenuIcons.getResourceId(5, -1)));
-        navDrawerItems.add(new NavDrawerItem("Leggings", navMenuIcons.getResourceId(6, -1)));
-        // Catologo
+        navDrawerItems.add(new NavDrawerItem("Jeans", navMenuIcons.getResourceId(6, -1)));
+        // Catalogo
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // old Contacto (Pedidos)
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
@@ -124,6 +124,7 @@ public class MainActivity extends ActionBarActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position,
                                 long id) {
             switch(position) {
+
                 case 0:
                     displayView(position);
                     break;
@@ -133,8 +134,8 @@ public class MainActivity extends ActionBarActivity {
                     break;
 
                 case 2:
-                    Intent intent = new Intent(MainActivity.this, JeansActivity.class);
-                    startActivity(intent);
+                    Intent leggings = new Intent(MainActivity.this, LeggingsActivity.class);
+                    startActivity(leggings);
                     break;
 
                 case 3:
@@ -143,8 +144,8 @@ public class MainActivity extends ActionBarActivity {
                     break;
 
                 case 4:
-                    Intent leggings = new Intent(MainActivity.this, LeggingsActivity.class);
-                    startActivity(leggings);
+                    Intent jeans = new Intent(MainActivity.this, JeansActivity.class);
+                    startActivity(jeans);
                     break;
 
             }
@@ -170,6 +171,7 @@ public class MainActivity extends ActionBarActivity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         switch (position) {
+
             case 0:
                 fragment = new FmMenu();
                 break;

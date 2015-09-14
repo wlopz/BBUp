@@ -21,9 +21,9 @@ import java.util.ArrayList;
 public class FmMenu extends Fragment {
 
     int[] imagenes = {
-            R.drawable.jeans,
-            R.drawable.blusas,
             R.drawable.leggings,
+            R.drawable.blusas,
+            R.drawable.jeans,
     };
 
     SectionsPagerAdapter mSectionsPagerAdapter;
@@ -150,14 +150,14 @@ public class FmMenu extends Fragment {
                     Intent intent = new Intent();
 
                     switch(imagen){
-                        case R.drawable.jeans:
-                            intent = new Intent(getActivity(), JeansActivity.class);
+                        case R.drawable.leggings:
+                            intent = new Intent(getActivity(), LeggingsActivity.class);
                             break;
                         case R.drawable.blusas:
                             intent = new Intent(getActivity(), BlusasActivity.class);
                             break;
-                        case R.drawable.leggings:
-                            intent = new Intent(getActivity(), LeggingsActivity.class);
+                        case R.drawable.jeans:
+                            intent = new Intent(getActivity(), JeansActivity.class);
                             break;
                     }
 
