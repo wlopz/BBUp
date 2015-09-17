@@ -31,7 +31,7 @@ public class JeansActivity extends ActionBarActivity {
     private static final String TAG = JeansActivity.class.getSimpleName();
 
     // Jeans json url
-    private static final String url = "http://wlodsgn.x10host.com/json/jnslst.json";
+    private static final String url = "http://bonbonup.x10host.com/json/jnslst.json";
     private ProgressDialog pDialog;
     private List<Jeans> jeansGrid = new ArrayList<Jeans>();
     private GridView gridView;
